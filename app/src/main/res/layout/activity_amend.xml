@@ -31,6 +31,16 @@
 
     </RelativeLayout>
 
+    <TextView
+        android:id="@+id/amend_memo_current_edit_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:text="current time"
+        android:textSize="16sp" />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -55,15 +65,107 @@
 
     </LinearLayout>
 
-
-    <EditText
-        android:id="@+id/amend_content"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="420dp"
-        android:layout_marginTop="10dp"
-        android:background="#66D8BFCE"
-        android:gravity="start"
-        android:hint="输入内容" />
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/amend_content"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_marginTop="10dp"
+            android:background="#66D8BFCE"
+            android:gravity="start"
+            android:hint="输入内容" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/amend_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="8dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/amend_insert_image_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@mipmap/shangchuantupian" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="上传图片"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/amend_pic_one"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/shangchuantupian"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/amend_pic_two"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/shangchuantupian"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/amend_pic_three"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_marginLeft="20dp"
+                android:src="@mipmap/shangchuantupian"
+                android:visibility="gone" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:id="@+id/amend_memo_is_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="是否设置提醒" />
+
+        <TextView
+            android:id="@+id/amend_memo_check_tip_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="请选择日期"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/amend_memo_check_tip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="请选择时间"
+            android:visibility="gone" />
+    </LinearLayout>
+
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -5,7 +5,7 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
@@ -22,21 +22,47 @@
 
         <TextView
             android:id="@+id/item_memo_title"
-            android:layout_width="match_parent"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="80dp"
+            android:layout_marginLeft="12dp"
             android:ellipsize="end"
             android:maxLines="1"
-            android:text="title"
+            android:text="titletitletitletitletitletitletitletitletitletitletitle"
             android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/memo_create_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="8dp"
+                android:text="create"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/memo_modify_time_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:text="edit"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
     </LinearLayout>
 
     <TextView
         android:id="@+id/item_memo_body"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="6dp"
         android:layout_marginRight="30dp"
         android:ellipsize="end"

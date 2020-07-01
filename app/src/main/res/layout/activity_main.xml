@@ -6,6 +6,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -31,6 +32,14 @@
             android:src="@mipmap/addto" />
 
     </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="10dp"
+        android:text="tips：右侧显示的是创建时间，根据编辑时间排序" />
+
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/memo_list"
